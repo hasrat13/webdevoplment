@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+<!--Libraries-->
+
+<title>hasrat</title>
+
+
+
+</head>
+
+<body>
+
+<h2>javascript array sort</h2>
+<p>click the button to araneg the arry in desecding order</p>
+<button onclick="asending ()">asending order</button>
+<button onclick="desending ()">desending order</button>
+<p id="result"></p>
+<script>
+var points=[3,25,14,15,11,110,101,302]
+document.getElementById("result").innerHTML = points;
+function asending(){
+    points.sort(function(a,b){return a-b})
+document.getElementById("result").innerHTML=points;
+}
+
+function desending(){
+    points.sort(function(a,b){return b-a})
+document.getElementById("result").innerHTML=points;
+}
+
+</script>
+</body>
+
+</html>
