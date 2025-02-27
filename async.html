@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+<!--Libraries-->
+
+<title>hasrat</title>
+
+
+
+</head>
+
+<body>
+
+<h1 id="result"></h1>
+<script>
+async function add(a,b){
+    let response = await a+b;
+    display (response)
+}
+
+function display(some){
+    document.getElementById("result").innerHTML =some;
+}
+add(3,14)
+
+</script>
+
+
+
+
+
+
+
+    
+</body>
+
+</html>
