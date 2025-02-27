@@ -14,12 +14,32 @@
 <h2>Javascript Arrow String</h2>
 <p id="result"></p>
 <p id="result2"></p>
+<p id="result3"></p>
+
+
+
 <script>
 add =(a,b) => a+b;
 document.getElementById("result").innerHTML = add(3,11);
 
 sub =(a,b) => a-b;
 document.getElementById("result2").innerHTML = sub(3,11);
+
+product =(a,b) => a*b;
+try{
+document.getElementById("reslut3").innerHTML= a;
+// if the function is invoked here the result will be dsplayed 
+// if any variable  is given the error message get displayed
+
+}
+
+
+catch(err){
+document.getElementById("result3").innerHTML=err.messages
+}
+
+
+
 
 </script>
 
