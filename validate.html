@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+<!--Libraries-->
+
+<title>hasrat</title>
+
+<script>
+    function ValidateForm(){
+        var x  = document.forms["Myform"]["Fname"].value;
+        if(x==""){
+            alert(" name must be filled out")
+            return false
+        }
+        else document.write("submmit")
+    }
+
+</script>
+
+</head>
+
+<body>
+    <form name="myForm" onsubmit="validateForm()">
+
+        Name: <input type="text" name="fname">
+        
+        <input type="submit" value="Submit">
+        
+        <p id="message"></p>
+        
+        </form>
+
+   
+</body>
+
+</html>
